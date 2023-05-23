@@ -14,12 +14,12 @@ public class BaseTest extends Flib implements IAutoConstant {
 	public void setUp() throws IOException
 	{
 		Flib flib = new Flib();
-		String browserValue = flib.readPropertyData("PROPERTY_PATH","browser");
-		String url=flib.readPropertyData("PROPERTY_PATH","url");
+		String browserValue = flib.readPropertyData(PROPERTY_PATH,"browser");
+		String url=flib.readPropertyData(PROPERTY_PATH,"url");
 
 		if(browserValue.equalsIgnoreCase("chrome"))		//To launch Chrome
 		{
-			System.setProperty("CHROME_KEY","drivers/chromedriver.exe");
+			System.setProperty(CHROME_KEY,CHROME_PATH);
 
 			driver=new ChromeDriver();
 			driver.manage().window().maximize();
@@ -30,7 +30,7 @@ public class BaseTest extends Flib implements IAutoConstant {
 		}
 		else if(browserValue.equalsIgnoreCase("Firefox"))	//To launch Firefox
 		{
-			System.setProperty("GECKO_KEY", "drivers/geckodriver.exe");
+			System.setProperty(GECKO_KEY, GECKO_PATH);
 
 			driver=new FirefoxDriver();
 			driver.manage().window().maximize();
@@ -40,7 +40,7 @@ public class BaseTest extends Flib implements IAutoConstant {
 		}
 		else if(browserValue.equalsIgnoreCase("Edge"))		//To launch Edge
 		{
-			System.setProperty("EDGE_KEY", "drivers/msedgedriver.exe");
+			System.setProperty(EDGE_KEY, EDGE_PATH);
 
 			driver=new EdgeDriver();
 			driver.manage().window().maximize();

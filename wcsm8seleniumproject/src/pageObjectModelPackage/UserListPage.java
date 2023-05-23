@@ -1,7 +1,9 @@
 package pageObjectModelPackage;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class UserListPage{
 
@@ -16,8 +18,14 @@ public class UserListPage{
 	@FindBy(xpath = "(//a[contains(text(),'System, Administrator (admin)')]/ancestor::tbody/descendant::a)[1]") private WebElement Link;
 	@FindBy(xpath = "//input[@value='Delete This User']")  private WebElement DeleteUser;
 
-
+	
 	//Initialization
+	public UserListPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver,this);
+	}
+
+	//Utilization
 	public WebElement getCreateNewUser() {
 		return CreateNewUser;
 	}
@@ -51,6 +59,32 @@ public class UserListPage{
 
 	//Operational Methods
 
+	public void createUserMethod(String usn,String pass,String Fn,String Ln) throws InterruptedException
+	{
+		CreateNewUser.click();
+		Thread.sleep(1000);
+		userNameTB.sendKeys(usn);
+		Thread.sleep(1000);
+		passwordTB.sendKeys(pass);
+		passwordReTextType.sendKeys(pass);
+
+		Thread.sleep(1000);
+		FirstNameTB.sendKeys(Fn);
+		Thread.sleep(1000);
+		LastNameTB.sendKeys(Ln);
+
+		Thread.sleep(1000);
+		CreateUserButton.click();
+	}
+
+	public void deleteUserMethod() throws InterruptedException
+	{
+		Link.click();
+		Thread.sleep(1000);
+		DeleteUser.click();
+		WorkLib wl = new WorkLib();
+		wl.handleConfirmationPopUp();
+	}
 
 
 

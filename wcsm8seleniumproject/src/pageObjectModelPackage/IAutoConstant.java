@@ -5,8 +5,8 @@ public interface IAutoConstant {
 	String CHROME_PATH="drivers/chromedriver.exe";
 	
 	
-	String FIREFOX_KEY="webdriver.gecko.driver";
-	String FIREFOX_PATH="drivers/geckodriver.exe";
+	String GECKO_KEY="webdriver.gecko.driver";
+	String GECKO_PATH="drivers/geckodriver.exe";
 	
 	
 	String EDGE_KEY="webdriver.edge.driver";
