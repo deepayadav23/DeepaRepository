@@ -18,20 +18,24 @@ public class UsernamePasswordFrameAssignment {
 
 		driver.get("file:///D:/UserNameTextBox.html");
 		Thread.sleep(2000);
-		
-		WebElement frameElement = driver.findElement(By.xpath("//iframe[@id='frid']"));
+
+		WebElement username = driver.findElement(By.id("i1"));
+		username.sendKeys("Deepa");
+
+		//SWitch to frame
 		driver.switchTo().frame(0);
 
-		//driver.switchTo().frame("frid");
-		WebElement check = driver.findElement(By.xpath("//iframe[@class='frcl']"));
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
-		wait.until(ExpectedConditions.elementToBeClickable(check)).click();
+		WebElement password = driver.findElement(By.id("i1"));
+		password.sendKeys("videe1605");
+		Thread.sleep(2000);
+		password.clear();
 		
+		//Go to the previous frame
 		driver.switchTo().defaultContent();
-		driver.findElement(By.id("i1")).sendKeys("Deepa");
-		driver.findElement(By.id("frid")).sendKeys("videe1605");
-		
+		username.clear();
 
+		//Close the browser
+		driver.quit();
 
 	}
 

@@ -18,7 +18,7 @@ public class BaseTest extends Flib{
 		String browserValue = flib.readPropertyData("./data/config.properties","browser");
 		String url=flib.readPropertyData("./data/config.properties","url");
 
-		if(browserValue.equalsIgnoreCase("chrome"))		//To launch Chrome
+		if(browserValue.equalsIgnoreCase("chrome"))		//To launch ChromeBrowser
 		{
 			System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
 
