@@ -17,7 +17,7 @@ public class DemoTest2 {
 	}
 
 	@Test
-	public void f1() 
+	public void f1()
 	{
 		int i=10;
 		int j=5;
