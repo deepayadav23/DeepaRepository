@@ -17,6 +17,7 @@ public class LoginPage {
 	@FindBy(linkText="Actimind Inc.") private WebElement actiMindLink;
 
 	//Initialization
+	
 	public LoginPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);

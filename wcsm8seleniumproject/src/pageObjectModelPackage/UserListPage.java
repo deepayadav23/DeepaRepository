@@ -85,8 +85,4 @@ public class UserListPage{
 		WorkLib wl = new WorkLib();
 		wl.handleConfirmationPopUp();
 	}
-
-
-
-
 }

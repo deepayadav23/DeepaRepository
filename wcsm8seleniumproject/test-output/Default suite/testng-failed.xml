@@ -3,16 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGAnnotations.GoogleSearchTestCase">
+      <class name="testNGFlags.Flag6">
         <methods>
-          <include name="search3"/>
-          <include name="search2"/>
-          <include name="search1"/>
-          <include name="propertyMethod"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="loginMethod"/>
+          <include name="createUser"/>
         </methods>
-      </class> <!-- testNGAnnotations.GoogleSearchTestCase -->
+      </class> <!-- testNGFlags.Flag6 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

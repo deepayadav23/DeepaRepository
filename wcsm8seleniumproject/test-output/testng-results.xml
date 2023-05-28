@@ -1,71 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="12" total="18" passed="6" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[ITC1]]>
+    </line>
+    <line>
+      <![CDATA[ITC2]]>
+    </line>
+    <line>
+      <![CDATA[ITC3]]>
+    </line>
+    <line>
+      <![CDATA[ITC4]]>
+    </line>
+    <line>
+      <![CDATA[ITC5]]>
+    </line>
+    <line>
+      <![CDATA[ITC6]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-05-24T10:43:37 IST" name="Suite" finished-at="2023-05-24T10:44:15 IST" duration-ms="37554">
+  <suite started-at="2023-05-27T09:47:52 IST" name="Suite" finished-at="2023-05-27T09:47:53 IST" duration-ms="118">
     <groups>
+      <group name="Integration Testing">
+        <method signature="GroupFlag.it1()[pri:0, instance:testNGFlags.GroupFlag@35047d03]" name="it1" class="testNGFlags.GroupFlag"/>
+        <method signature="GroupFlag.it2()[pri:0, instance:testNGFlags.GroupFlag@35047d03]" name="it2" class="testNGFlags.GroupFlag"/>
+        <method signature="GroupFlag.it3()[pri:0, instance:testNGFlags.GroupFlag@35047d03]" name="it3" class="testNGFlags.GroupFlag"/>
+        <method signature="GroupFlag.it4()[pri:0, instance:testNGFlags.GroupFlag@35047d03]" name="it4" class="testNGFlags.GroupFlag"/>
+        <method signature="GroupFlag.it5()[pri:0, instance:testNGFlags.GroupFlag@35047d03]" name="it5" class="testNGFlags.GroupFlag"/>
+        <method signature="GroupFlag.it6()[pri:0, instance:testNGFlags.GroupFlag@35047d03]" name="it6" class="testNGFlags.GroupFlag"/>
+      </group> <!-- Integration Testing -->
     </groups>
-    <test started-at="2023-05-24T10:43:37 IST" name="Test" finished-at="2023-05-24T10:44:15 IST" duration-ms="37554">
-      <class name="testNGPackage2.Class3">
-        <test-method signature="test6Method()[pri:0, instance:testNGPackage2.Class3@78b66d36]" started-at="2023-05-24T10:43:37 IST" name="test6Method" finished-at="2023-05-24T10:44:15 IST" duration-ms="37487" status="PASS">
+    <test started-at="2023-05-27T09:47:52 IST" name="Test" finished-at="2023-05-27T09:47:53 IST" duration-ms="118">
+      <class name="testNGFlags.GroupFlag">
+        <test-method signature="it1()[pri:0, instance:testNGFlags.GroupFlag@35047d03]" started-at="2023-05-27T09:47:53 IST" name="it1" finished-at="2023-05-27T09:47:53 IST" duration-ms="19" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[ITC1]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- test6Method -->
-      </class> <!-- testNGPackage2.Class3 -->
-      <class name="testNGPackage2.Class2">
-        <test-method signature="test5Method()[pri:0, instance:testNGPackage2.Class2@1b1473ab]" started-at="2023-05-24T10:43:37 IST" name="test5Method" finished-at="2023-05-24T10:43:58 IST" duration-ms="20974" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'DEEPA', ip: '192.168.6.31']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'DEEPA', ip: '192.168.6.31'
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:146)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at testNGPackage2.Class2.test5Method(Class2.java:15)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:208)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:114)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-... 22 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        </test-method> <!-- it1 -->
+        <test-method signature="it2()[pri:0, instance:testNGFlags.GroupFlag@35047d03]" started-at="2023-05-27T09:47:53 IST" name="it2" finished-at="2023-05-27T09:47:53 IST" duration-ms="2" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[ITC2]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- test5Method -->
-      </class> <!-- testNGPackage2.Class2 -->
-      <class name="testNGPackage2.Class1">
-        <test-method signature="test4Method()[pri:0, instance:testNGPackage2.Class1@7ce3cb8e]" started-at="2023-05-24T10:43:37 IST" name="test4Method" finished-at="2023-05-24T10:44:05 IST" duration-ms="27388" status="PASS">
+        </test-method> <!-- it2 -->
+        <test-method signature="it3()[pri:0, instance:testNGFlags.GroupFlag@35047d03]" started-at="2023-05-27T09:47:53 IST" name="it3" finished-at="2023-05-27T09:47:53 IST" duration-ms="3" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[ITC3]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- test4Method -->
-      </class> <!-- testNGPackage2.Class1 -->
+        </test-method> <!-- it3 -->
+        <test-method signature="it4()[pri:0, instance:testNGFlags.GroupFlag@35047d03]" started-at="2023-05-27T09:47:53 IST" name="it4" finished-at="2023-05-27T09:47:53 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ITC4]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- it4 -->
+        <test-method signature="it5()[pri:0, instance:testNGFlags.GroupFlag@35047d03]" started-at="2023-05-27T09:47:53 IST" name="it5" finished-at="2023-05-27T09:47:53 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ITC5]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- it5 -->
+        <test-method signature="it6()[pri:0, instance:testNGFlags.GroupFlag@35047d03]" started-at="2023-05-27T09:47:53 IST" name="it6" finished-at="2023-05-27T09:47:53 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ITC6]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- it6 -->
+      </class> <!-- testNGFlags.GroupFlag -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
