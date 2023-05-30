@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGFlags.Flag6">
+      <class name="dyanamicScreenShort.TestCase">
         <methods>
-          <include name="loginMethod"/>
-          <include name="createUser"/>
+          <include name="setUp"/>
+          <include name="property"/>
+          <include name="tearDown"/>
+          <include name="login1"/>
         </methods>
-      </class> <!-- testNGFlags.Flag6 -->
+      </class> <!-- dyanamicScreenShort.TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
